@@ -39,7 +39,6 @@ a:hover {
     top: 0;
     left: 0;
     text-align: center;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     background-color: #627495;
     z-index: 5;
     font-family: 'Bitter-Regular';
@@ -52,7 +51,6 @@ a:hover {
 
 #footer { 
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: #627495;
     color: #ABAEB2;
     position: fixed;
@@ -132,8 +130,13 @@ a:hover {
 
 .container > .content_boxes {
   height: 87vh;
-  border-bottom: 1px solid black;
   justify-content: center;
   scroll-snap-align: start;
 
+}
+
+.container .content_boxes:nth-child(5) {
+  height: 20vh;
+  background-color: #627495;
+  border-bottom: none;
 }
