@@ -3,18 +3,10 @@ html, body{
   font-size: 100%;
   margin: 0;
   height: 100%;
-  overflow: hidden;
 }
 
 fox {
     color: #EA802E;
-}
-
-@media only screen and (max-width :600px) {
-    #main {
-        font-size:4vh;
-        font-family: 'Bitter-Regular'
-    }
 }
 
 a:link {
@@ -49,6 +41,24 @@ a:hover {
     font-size: 8vh;
 }
 
+@media only screen and (max-width :600px) {
+#header { 
+  position: fixed;
+  color: #b69577;
+  right: 0;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: #627495;
+  z-index: 5;
+  font-family: 'Bitter-Regular';
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vh;
+}}
+
 #footer { 
     text-align: center;
     background-color: #627495;
@@ -64,6 +74,25 @@ a:hover {
     align-items: center;
 
 }
+
+@media only screen and (max-width :600px) {
+  #footer { 
+    text-align: center;
+    background-color: #627495;
+    color: #ABAEB2;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 5;
+    height: 3vh;
+    font-family: 'Bitter-Regular';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vh;
+
+}
+}
     
 #site_menu {
     position: fixed;
@@ -76,13 +105,15 @@ a:hover {
 
 @media only screen and (max-width :600px) {
   #site_menu {
-    position: absolute;
-    top: 80%;
+    top: 75vh;
     width: 100%;
     height: 5%;
-    padding-left: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     position: fixed;
+    margin-left: 0;
   }
 }
 
@@ -115,28 +146,53 @@ a:hover {
   }
 
 .container {
+  position: fixed;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 87vh;
+  width: 100%;
   margin-top: 10vh;
-  
-}
-
-@supports(scroll-snap-type: y) {
-  .no-support {
-    display: none;
-  }
 }
 
 .container > .content_boxes {
   height: 87vh;
   justify-content: center;
   scroll-snap-align: start;
+  position: relative;
 
 }
 
-.container .content_boxes:nth-child(5) {
-  height: 20vh;
+.container .content_boxes:nth-child(1) {
+  height: 87vh;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.container .content_boxes:nth-child(2) {
+  height: 87vh;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.container .content_boxes:nth-child(3) {
+  height: 87vh;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.container .content_boxes:nth-child(4) {
+  height: 87vh;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.container .content_boxes:nth-child(6) {
+  height: 15vh;
   background-color: #627495;
   border-bottom: none;
+}
+
+.map_container {
+  height: 25vh;
+  width: 25vh;
 }

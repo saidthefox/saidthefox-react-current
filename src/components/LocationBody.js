@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
+import MapContainer from './MapContainer';
 
-function LocationBody() {
-    return (
+class LocationBody extends Component {
+    render(){
+        return (
             <div className = "content_boxes">
-                location
+                <MapContainer></MapContainer>
             </div>
     )
 }
-
+}
 export default LocationBody;

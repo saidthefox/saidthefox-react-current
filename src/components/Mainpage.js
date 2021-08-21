@@ -7,12 +7,12 @@ import Content from './Content';
 class Mainpage extends React.Component {
 render() {
     return (
-        <div>
+        <React.Fragment>
             <Header></Header>
             <Nav></Nav>
             <Content></Content>
             <Footer></Footer>
-        </div>
+        </React.Fragment>
     );
 }
 }
