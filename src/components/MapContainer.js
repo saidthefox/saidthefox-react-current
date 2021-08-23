@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react'
 
-class MapContainer extends Component {
+class MapContainer extends React.Component {
     render(){
 
         const containerStyle = {
-            width: '300px',
-            height: '300px',
+            width: '25vw',
+            height: '25vh',
+            'margin-top': '25vh',
+            'margin-left': '70vw',
         }
 
         return (
