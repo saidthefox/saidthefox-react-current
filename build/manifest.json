@@ -1,7 +1,6 @@
 {
-  "short_name": "saidthefox.com",
-  "name": "saidthefox Coffee Co.",
-  "description": "A website about your mom.",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,19 +8,18 @@
       "type": "image/x-icon"
     },
     {
-      "src": "circle.svg",
+      "src": "logo192.png",
       "type": "image/png",
-      "purpose": "maskable",
       "sizes": "192x192"
     },
     {
-      "src": "circle.svg",
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
-  "theme_color": "#EA802E",
-  "background_color": "#627495"
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
